@@ -1,0 +1,18 @@
+{
+  "name": "node_beginner",
+  "version": "1.0.0",
+  "description": "This is ademo package I am using to learn node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "beginner"
+  ],
+  "author": "Nicholas Loren",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}
