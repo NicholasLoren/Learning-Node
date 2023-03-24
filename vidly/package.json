@@ -1,0 +1,22 @@
+{
+  "name": "vidly",
+  "version": "1.0.0",
+  "description": "This is a video rental app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vidly",
+    "Movies",
+    "Rental",
+    "Cheap",
+    "Convinient"
+  ],
+  "author": "Nicholas Loren",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "joi": "^17.9.1"
+  }
+}

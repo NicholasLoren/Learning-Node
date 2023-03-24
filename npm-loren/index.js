@@ -1,0 +1,1 @@
+module.exports.greet = function (){ return "Hello, this is Nicholas Loren" }

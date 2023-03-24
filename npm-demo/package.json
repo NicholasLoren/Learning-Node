@@ -13,6 +13,10 @@
   "author": "Nicholas Loren",
   "license": "ISC",
   "dependencies": {
+    "npm-loren": "^1.0.2",
     "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.6"
   }
 }
