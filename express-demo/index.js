@@ -1,8 +1,32 @@
+const config = require("config")
 const express = require("express");
 const Joi = require("joi");
+const logger = require("./logger");
+const helmet = require("helmet");
+const morgan = require("morgan");
+const debug = require("debug")("app:startup")
+
+ 
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.use(logger);
+app.use(helmet());
+app.set("view engine","pug")
+app.set("views","./views")
+
+console.log("App Name",config.get("name"))
+console.log("App Mail Server",config.get("mail.host"))
+
+if (app.get("env") === "development") {
+  app.use(morgan("dev"));
+  debug(("Morgan enabled..."))
+} 
+
+console.log(config.get("mail.password"))
+
 
 const courses = [
   { id: 1, name: "Website Designing" },
@@ -11,7 +35,7 @@ const courses = [
 ];
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.render("index",{title:"My Node App title",message:"Hello world"})
 });
 
 app.get("/api/courses", (req, res) => {
@@ -80,9 +104,6 @@ app.delete("/api/courses/:id", (req, res) => {
     (course) => course.id === parseInt(req.params.id)
   );
   if (!course) return res.status(404).send("Course was not found");
- 
-
-
 });
 
 const validateCourse = (course) => {
