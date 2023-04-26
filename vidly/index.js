@@ -3,6 +3,8 @@ const mongoose = require("mongoose")
 /*==================IMPORTS=========================*/
 const genres = require("./routes/genres")
 const customers = require("./routes/customers")
+const movies = require("./routes/movies")
+ 
 
 const app = express()
 app.use(express.json())
