@@ -1,13 +1,8 @@
 const mongoose = require("mongoose")
 const Joi = require("joi")
+const {genreSchema} = require("./genres")
 
-//create genre schema
-const genreSchema = mongoose.Schema({
-    name:{
-        type:String,
-        required:true
-    }
-})
+
 //create movie schema
 const movieSchema = mongoose.Schema({
     title:{
@@ -16,7 +11,10 @@ const movieSchema = mongoose.Schema({
         maxlength:50,
         required:true
     },
-    genre:genreSchema,
+    genre:{
+        type:genreSchema,
+        required:true
+    },
     dailyRentalRate:{
         type:Number,
         min:0,
@@ -29,11 +27,19 @@ const movieSchema = mongoose.Schema({
 
 })
 
+const Movies = mongoose.model('Movie',movieSchema)
 
 const validate = (movie)=>{
-    const movieSchema = Joi.Schema({
+    const movieSchema = Joi.object({
+        title: Joi.string().required().min(5).max(50),
+        dailyRentalRate: Joi.number().min(0),
+        numberInStock: Joi.number().min(0),
+        genreId: Joi.string().required()
 
     })
 
-    return Joi.validate(movieSchema,movie)
+    return movieSchema.validate(movie)
 }
+
+module.exports.validate = validate
+module.exports.Movies = Movies

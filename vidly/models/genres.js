@@ -19,3 +19,4 @@ const validate = (genre) => {
 
 exports.validate = validate
 exports.Genre = Genre
+exports.genreSchema = genreSchema
