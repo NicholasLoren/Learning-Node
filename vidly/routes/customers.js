@@ -35,14 +35,14 @@ router.post('/', async (req, res) => {
   }
 
   //add the following customers to database
-  let customer = new Customers({
+  const customer = new Customers({
     name,
     isGold,
     phone,
   })
 
   try {
-    customer = await customer.save()
+    await customer.save()
     // if(!customer) return res.status(400).send(customer)
     return res.status(200).send(customer)
   } catch (err) {

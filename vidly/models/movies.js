@@ -34,7 +34,7 @@ const validate = (movie)=>{
         title: Joi.string().required().min(5).max(50),
         dailyRentalRate: Joi.number().min(0),
         numberInStock: Joi.number().min(0),
-        genreId: Joi.string().required()
+        genreId: Joi.objectId().required()
 
     })
 
