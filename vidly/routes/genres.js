@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const {Genre,validate} = require("../models/genres")
 const auth = require("../middleware/auth")
+const admin = require("../middleware/admin")
 //Routes for genre
 
 //Get all genres
@@ -66,7 +67,7 @@ router.post('/',auth, (req, res) => {
 
 //Delete record
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',[auth,admin], (req, res) => {
   const removeGenre = async () => {
     //Find the genre
 

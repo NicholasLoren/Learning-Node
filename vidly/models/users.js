@@ -21,12 +21,17 @@ const schema = new mongoose.Schema({
     minlength: 6,
     maxlength: 1024,
   },
+  isAdmin:{
+    type:Boolean,
+    default:false
+  }
 })
 
 //create a token generative method
 schema.methods.generateToken = function(){
     return jwt.sign({
-        _id: this._id
+        _id: this._id,
+        isAdmin:this.isAdmin
       },config.get("jwtPrivateKey"))
 }
 

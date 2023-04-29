@@ -36,7 +36,7 @@ router.post('/', auth,async (req, res) => {
 
     await user.save()
     
-    res.header("x-auth-token",user.genrateToken()).send(_.pick(user,["name","email"]))
+    res.header("x-auth-token",user.generateToken()).send(_.pick(user,["_id","name","email"]))
   } catch (err) {
     return res.send(err.message)
   }
