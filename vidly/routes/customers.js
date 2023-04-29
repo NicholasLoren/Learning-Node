@@ -1,7 +1,7 @@
 const express = require('express') 
 const router = express.Router()
 const {validate,Customers} = require("../models/customers")
-
+const auth = require("../middleware/auth")
 
 //get all customers
 router.get('/', async (req, res) => {
@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
 })
 
 //add a customer
-router.post('/', async (req, res) => {
+router.post('/',auth, async (req, res) => {
   const { name, isGold, phone } = req.body
 
   //validate
@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
 })
 
 //update a customer
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth,async (req, res) => {
   const { id } = req.params
   const { name, isGold, phone } = req.body
 

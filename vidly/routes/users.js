@@ -3,7 +3,9 @@ const mongoose = require('mongoose')
 const router = express.Router()
 const { validate, Users } = require('../models/users')
 const bcrypt = require("bcrypt")
-const _ = require("lodash")
+const _ = require("lodash") 
+const auth = require("../middleware/auth")
+
 
 //get users
 router.get('/', async (req, res) => {
@@ -12,7 +14,7 @@ router.get('/', async (req, res) => {
 })
 
 //add users
-router.post('/', async (req, res) => {
+router.post('/', auth,async (req, res) => {
   try {
     //validate user properties
     const { error } = validate(req.body)
@@ -33,7 +35,8 @@ router.post('/', async (req, res) => {
     })
 
     await user.save()
-    res.send(_.pick(user,["name","email"]))
+    
+    res.header("x-auth-token",user.genrateToken()).send(_.pick(user,["name","email"]))
   } catch (err) {
     return res.send(err.message)
   }

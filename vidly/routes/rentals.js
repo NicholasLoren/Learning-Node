@@ -3,6 +3,7 @@ const { Rentals, validate } = require('../models/rentals')
 const { Customers } = require('../models/customers')
 const { Movies } = require('../models/movies')
 const router = express.Router()
+const auth = require("../middleware/auth")
 
 //get rentals
 router.get('/', async (req, res) => {
@@ -58,7 +59,7 @@ router.post('/', async (req, res) => {
 })
 
 //get a rental
-router.get('/:id', async (req, res) => {
+router.get('/:id',auth, async (req, res) => {
   const { id } = req.params
   //find the rental
   const rental = await Rentals.findById(id)
@@ -78,7 +79,7 @@ router.delete('/:id', async (req, res) => {
 })
 
 //update a rental
-router.put('/:id', async (req, res) => {
+router.put('/:id',auth, async (req, res) => {
   //validate the rental object
   const {id} = req.params
   const { error } = validate(req.body)
@@ -99,20 +100,7 @@ router.put('/:id', async (req, res) => {
 
   //before renting, find if there are enoughh movies
   if (movie.numberInStock === 0) return res.send('Movie is out of stock')
-
-//   //create a rental object
-//   let rental = new Rentals({
-//     movie: {
-//       _id: movie._id,
-//       title: movie.title,
-//       dailyRentalRate: movie.dailyRentalRate,
-//     },
-//     customer: {
-//       _id: customer._id,
-//       name: customer.name,
-//       phone: customer.phone,
-//     },
-//   })
+ 
 
 //update the rental
 rental.movie._id = movie._id

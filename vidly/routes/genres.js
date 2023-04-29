@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {Genre,validate} = require("../models/genres")
+const auth = require("../middleware/auth")
 //Routes for genre
 
 //Get all genres
@@ -34,7 +35,7 @@ router.get('/:id', (req, res) => {
 
 //Create a genre
 
-router.post('/', (req, res) => {
+router.post('/',auth, (req, res) => {
   const createGenre = async () => {
     //First validate 
     const { error } = validate(req.body)
@@ -46,7 +47,7 @@ router.post('/', (req, res) => {
     //If everything is okay, add new record
 
     const genre = new Genre({ name: req.body.name })
-    console.log({ name: req.body.name })
+     
 
     try {
       return await genre.save()
@@ -87,7 +88,7 @@ router.delete('/:id', (req, res) => {
 
 //update genre
 
-router.put('/:id', (req, res) => {
+router.put('/:id',auth, (req, res) => {
   const updateGenre = async () => {
     //Find the genre
     const { id } = req.params
