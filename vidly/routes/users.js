@@ -50,7 +50,7 @@ router.get('/:id', async (req, res) => {
   const user = await Users.findById(id)
   if (!user) return res.status(400).send('User not found')
 
-  return res.send(user)
+  return res.send(_.pick(user,["name","email"]))
 })
 
 //delete

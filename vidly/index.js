@@ -8,7 +8,13 @@ const movies = require("./routes/movies")
 const rentals = require("./routes/rentals")
 const users = require("./routes/users")
 const auth = require("./routes/auth")
- 
+const config = require("config")
+const jwt = require("jsonwebtoken")
+
+if(!config.get("jwtPrivateKey")){
+  console.log("Fatal Error: jwt private key not defined")
+  process.exit(1)
+}
 
 const app = express()
 app.use(express.json())

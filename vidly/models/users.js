@@ -26,12 +26,10 @@ const Users = mongoose.model('User', schema)
 const validate = (user) => {
   const schema = Joi.object({
     name: Joi.string().required().min(3).max(255),
-    email: Joi.string().email({
-      tlds: { allow: ['com', 'net'] },
-    }).required(),
-    password: Joi.string().required(),
+    email: Joi.string().email().required(),
+    password: Joi.string().required().min(6).max(255),
   })
-  return schema.validate()
+  return schema.validate(user)
 }
 
 module.exports.Users = Users
