@@ -3,6 +3,7 @@ const Joi = require('joi')
 const { Users } = require('../models/users')
 const bcrypt = require('bcrypt')
 const router = express.Router() 
+const auth = require("../middleware/auth")
 
 router.post('/', async (req, res) => {
   const { error } = validate(req.body)
@@ -28,5 +29,12 @@ const validate = (user) => {
 
   return schema.validate(user)
 }
+
+
+router.get("/me",auth,async(req,res)=>{
+  //read the user values from request
+  return res.send(req.user)
+
+})
 
 module.exports = router

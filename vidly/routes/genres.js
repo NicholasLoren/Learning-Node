@@ -1,20 +1,19 @@
 const express = require('express')
 const router = express.Router()
-const {Genre,validate} = require("../models/genres")
-const auth = require("../middleware/auth")
-const admin = require("../middleware/admin")
+const { Genre, validate } = require('../models/genres')
+const auth = require('../middleware/auth')
+const admin = require('../middleware/admin')
 //Routes for genre
 
-//Get all genres
-router.get('/', (req, res) => {
-  const getGenres = async () => {
-    console.log('Fecthing genres')
-    return await Genre.find()
-  }
+//create a function to handle the exception for every route
 
-  getGenres()
-    .then((genres) => res.send(genres))
-    .catch((err) => console.log(err.message))
+
+
+//Get all genres
+router.get('/', async (req, res, next) => {
+  throw new Error("Could not find genres")
+    const genres = await Genre.find()
+    res.send(genres) 
 })
 
 //Get a single course
@@ -36,9 +35,9 @@ router.get('/:id', (req, res) => {
 
 //Create a genre
 
-router.post('/',auth, (req, res) => {
+router.post('/', auth, (req, res) => {
   const createGenre = async () => {
-    //First validate 
+    //First validate
     const { error } = validate(req.body)
 
     if (error) {
@@ -48,7 +47,6 @@ router.post('/',auth, (req, res) => {
     //If everything is okay, add new record
 
     const genre = new Genre({ name: req.body.name })
-     
 
     try {
       return await genre.save()
@@ -67,7 +65,7 @@ router.post('/',auth, (req, res) => {
 
 //Delete record
 
-router.delete('/:id',[auth,admin], (req, res) => {
+router.delete('/:id', [auth, admin], (req, res) => {
   const removeGenre = async () => {
     //Find the genre
 
@@ -89,7 +87,7 @@ router.delete('/:id',[auth,admin], (req, res) => {
 
 //update genre
 
-router.put('/:id',auth, (req, res) => {
+router.put('/:id', auth, (req, res) => {
   const updateGenre = async () => {
     //Find the genre
     const { id } = req.params
