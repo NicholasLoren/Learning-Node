@@ -7,13 +7,10 @@ const admin = require('../middleware/admin')
 
 //create a function to handle the exception for every route
 
-
-
 //Get all genres
 router.get('/', async (req, res, next) => {
-  throw new Error("Could not find genres")
-    const genres = await Genre.find()
-    res.send(genres) 
+  const genres = await Genre.find()
+  res.send(genres)
 })
 
 //Get a single course
