@@ -1,7 +1,7 @@
 const Joi = require('joi')
 const mongoose = require('mongoose')
-const jwt = require("jsonwebtoken")
-const config = require("config")
+const jwt = require('jsonwebtoken')
+const config = require('config')
 
 const schema = new mongoose.Schema({
   name: {
@@ -21,18 +21,23 @@ const schema = new mongoose.Schema({
     minlength: 6,
     maxlength: 1024,
   },
-  isAdmin:{
-    type:Boolean,
-    default:false
-  }
+  isAdmin: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 //create a token generative method
-schema.methods.generateToken = function(){
-    return jwt.sign({
-        _id: this._id,
-        isAdmin:this.isAdmin
-      },config.get("jwtPrivateKey"))
+schema.methods.generateToken = function () {
+   
+  const token = jwt.sign(
+    {
+      _id: this._id,
+      isAdmin: this.isAdmin,
+    },
+    config.get('jwtPrivateKey')
+  )
+  return token
 }
 
 const Users = mongoose.model('User', schema)
