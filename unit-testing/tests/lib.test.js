@@ -1,4 +1,12 @@
-const { absolute, greet, getCurrencies,getProduct, registerUser } = require('../lib')
+const db = require('../db')
+const {
+  absolute,
+  greet,
+  getCurrencies,
+  getProduct,
+  registerUser,
+  applyDiscount,
+} = require('../lib')
 
 describe('absolute', () => {
   it('absolute - return a positive number if input value is positive', () => {
@@ -29,11 +37,11 @@ describe('getCurrencies', () => {
   })
 })
 
-describe('getProduct',()=>{
-    it('should return an object with a object id',()=>{
-        const product = getProduct(1)
-        expect(product).toMatchObject({id:1})
-    })
+describe('getProduct', () => {
+  it('should return an object with a object id', () => {
+    const product = getProduct(1)
+    expect(product).toMatchObject({ id: 1 })
+  })
 })
 
 describe('registerUser', () => {
@@ -44,5 +52,17 @@ describe('registerUser', () => {
         registerUser(a)
       })
     }).toThrow()
+  })
+})
+
+describe('applyDiscount', () => {
+  it('should return discounted price if points are greater than 10', () => {
+    db.getCustomerSync = (id) => {
+      return { customerId: id, points: 11 }
+    }
+    const order = { customerId: 1, totalPrice: 10 }
+
+   applyDiscount(order)
+    expect(order.totalPrice).toBe(9)
   })
 })
