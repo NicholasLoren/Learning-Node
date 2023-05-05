@@ -2,3 +2,171 @@
 {"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
 {"level":"info","message":"Listening on port "}
 {"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"error","message":"mongoose.Types.isValid is not a function mongoose.Types.isValid is not a function","stack":"TypeError: mongoose.Types.isValid is not a function\n    at isValid (E:\\Desktop\\node\\vidly\\middleware\\validateId.js:5:36)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at jsonParser (E:\\Desktop\\node\\vidly\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at expressInit (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at query (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\application.js:181:10)\n    at Server.app (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\express.js:39:9)\n    at Server.emit (events.js:400:28)\n    at parserOnIncoming (_http_server.js:897:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)"}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","name":"CastError","path":"_id","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:27:11)\n    at ObjectId.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:158:13)\n    at ObjectId.SchemaType.applySetters (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:724:12)\n    at ObjectId.SchemaType._castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1095:15)\n    at ObjectId.castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:198:15)\n    at ObjectId.SchemaType.castForQueryWrapper (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1064:15)\n    at cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\cast.js:300:32)\n    at model.Query.Query.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:3216:12)\n    at model.Query.Query._castConditions (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1286:10)\n    at model.Query.Query._findOne (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1502:8)\n    at E:\\Desktop\\node\\vidly\\node_modules\\kareem\\index.js:315:33\n    at processTicksAndRejections (internal/process/task_queues.js:77:11)","stringValue":"\"1\"","value":"1"}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","name":"CastError","path":"_id","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:27:11)\n    at ObjectId.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:158:13)\n    at ObjectId.SchemaType.applySetters (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:724:12)\n    at ObjectId.SchemaType._castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1095:15)\n    at ObjectId.castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:198:15)\n    at ObjectId.SchemaType.castForQueryWrapper (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1064:15)\n    at cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\cast.js:300:32)\n    at model.Query.Query.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:3216:12)\n    at model.Query.Query._castConditions (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1286:10)\n    at model.Query.Query._findOne (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1502:8)\n    at E:\\Desktop\\node\\vidly\\node_modules\\kareem\\index.js:315:33\n    at processTicksAndRejections (internal/process/task_queues.js:77:11)","stringValue":"\"1\"","value":"1"}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\" Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","name":"CastError","path":"_id","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:27:11)\n    at ObjectId.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:158:13)\n    at ObjectId.SchemaType.applySetters (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:724:12)\n    at ObjectId.SchemaType._castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1095:15)\n    at ObjectId.castForQuery (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:198:15)\n    at ObjectId.SchemaType.castForQueryWrapper (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1064:15)\n    at cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\cast.js:300:32)\n    at model.Query.Query.cast (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:3216:12)\n    at model.Query.Query._castConditions (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1286:10)\n    at model.Query.Query._findOne (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\query.js:1502:8)\n    at E:\\Desktop\\node\\vidly\\node_modules\\kareem\\index.js:315:33\n    at processTicksAndRejections (internal/process/task_queues.js:77:11)","stringValue":"\"1\"","value":"1"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"error","message":"mongoose.Types.isValid is not a function mongoose.Types.isValid is not a function","stack":"TypeError: mongoose.Types.isValid is not a function\n    at isValid (E:\\Desktop\\node\\vidly\\middleware\\validateId.js:5:36)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at jsonParser (E:\\Desktop\\node\\vidly\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at expressInit (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at query (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\application.js:181:10)\n    at Server.app (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\express.js:39:9)\n    at Server.emit (events.js:400:28)\n    at parserOnIncoming (_http_server.js:897:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"error","message":"mongoose.Types.isValid is not a function mongoose.Types.isValid is not a function","stack":"TypeError: mongoose.Types.isValid is not a function\n    at module.exports (E:\\Desktop\\node\\vidly\\middleware\\validateId.js:5:36)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"error","message":"Cannot read property 'isValid' of undefined Cannot read property 'isValid' of undefined","stack":"TypeError: Cannot read property 'isValid' of undefined\n    at module.exports (E:\\Desktop\\node\\vidly\\middleware\\validateId.js:5:42)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"error","message":"Cannot read property 'isValid' of undefined Cannot read property 'isValid' of undefined","stack":"TypeError: Cannot read property 'isValid' of undefined\n    at isValid (E:\\Desktop\\node\\vidly\\middleware\\validateId.js:5:42)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at jsonParser (E:\\Desktop\\node\\vidly\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at expressInit (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\init.js:40:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at query (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\middleware\\query.js:45:5)\n    at newFn (E:\\Desktop\\node\\vidly\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at Function.handle (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\application.js:181:10)\n    at Server.app (E:\\Desktop\\node\\vidly\\node_modules\\express\\lib\\express.js:39:9)\n    at Server.emit (events.js:400:28)\n    at parserOnIncoming (_http_server.js:897:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"_message":"Genre validation failed","errors":{"name":{"$isValidatorError":true,"kind":"minlength","message":"Path `name` (`1234`) is shorter than the minimum allowed length (5).","name":"ValidatorError","path":"name","properties":{"message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (5).","minlength":5,"path":"name","type":"minlength","value":"1234"},"value":"1234"}},"level":"error","message":"Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5). Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).","name":"ValidationError","stack":"ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).\n    at new ValidationError (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Object.<anonymous>.Document.invalidate (E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\document.js:1775:32)\n    at E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\document.js:1647:17\n    at E:\\Desktop\\node\\vidly\\node_modules\\mongoose\\lib\\schematype.js:808:9\n    at processTicksAndRejections (internal/process/task_queues.js:77:11)"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}
+{"level":"info","message":"Listening on port "}
+{"level":"info","message":"Connecting to mongodb://localhost/vidly_test"}

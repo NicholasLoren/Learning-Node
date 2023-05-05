@@ -3,6 +3,7 @@ const router = express.Router()
 const { Genre, validate } = require('../models/genres')
 const auth = require('../middleware/auth')
 const admin = require('../middleware/admin')
+const validateId = require('../middleware/validateId')
 //Routes for genre
 
 //create a function to handle the exception for every route
@@ -15,49 +16,28 @@ router.get('/', async (req, res, next) => {
 
 //Get a single course
 
-router.get('/:id', (req, res) => {
-  const getGenre = async () => {
-    const { id } = req.params
-    const genre = await Genre.find({ _id: id })
+router.get('/:id', validateId, async (req, res) => {
+  const { id } = req.params
+  const genre = await Genre.findById(id)
 
-    return genre
-  }
-  getGenre()
-    .then((genre) => res.send(genre))
-    .catch((err) => {
-      console.log(err.message)
-      return res.status(404).send('OOPS! genre not found.')
-    })
+  if (!genre) return res.status(404).send('Could not find genre with given ID')
+  return res.send(genre)
 })
 
 //Create a genre
 
-router.post('/', auth, (req, res) => {
-  const createGenre = async () => {
-    //First validate
-    const { error } = validate(req.body)
+router.post('/', auth, async (req, res) => {
+  //First validate
+  const { error } = validate(req.body)
 
-    if (error) {
-      return res.status(400).send(error.details[0].message)
-    }
-
-    //If everything is okay, add new record
-
-    const genre = new Genre({ name: req.body.name })
-
-    try {
-      return await genre.save()
-    } catch (err) {
-      throw new Error(err)
-    }
+  if (error) {
+    return res.status(400).send(error.details[0].message)
   }
 
-  createGenre()
-    .then((genre) => res.send(genre))
-    .catch((err) => {
-      console.log(err.message)
-      return res.status(404).send('Could not create new genre')
-    })
+  //If everything is okay, add new record
+  const genre = new Genre({ name: req.body.name })
+  await genre.save()
+  res.status(200).send(genre)
 })
 
 //Delete record

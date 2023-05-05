@@ -13,9 +13,9 @@ require('./startup/db')()
 // Listen to dynamic port
 const port = process.env.PORT || 3000
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   winston.info('Listening on port ', port)
 })
 
 
-module.exports = app
+module.exports = server
