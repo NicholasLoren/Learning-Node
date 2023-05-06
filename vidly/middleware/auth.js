@@ -12,6 +12,6 @@ module.exports = function (req, res, next) {
 
     next()
   } catch (ex) {
-    res.send(ex.message)
+    res.status(400).send(ex.message)
   }
 }

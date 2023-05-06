@@ -42,50 +42,27 @@ router.post('/', auth, async (req, res) => {
 
 //Delete record
 
-router.delete('/:id', [auth, admin], (req, res) => {
-  const removeGenre = async () => {
-    //Find the genre
-
-    try {
-      const { id } = req.params
-      return await Genre.findByIdAndRemove(id)
-    } catch (err) {
-      return err
-    }
-  }
-
-  removeGenre()
-    .then((genre) => res.send(genre))
-    .catch((err) => {
-      console.log(er)
-      res.status(404).send(err)
-    })
+router.delete('/:id', [auth, admin, validateId], async (req, res) => {
+  const { id } = req.params
+  const genre = await Genre.findByIdAndRemove(id)
+  res.send(genre)
 })
 
 //update genre
 
-router.put('/:id', auth, (req, res) => {
-  const updateGenre = async () => {
-    //Find the genre
-    const { id } = req.params
-
-    //First validate
-    const { error } = validate(req.body)
-
-    if (error) {
-      return new Error(error.details[0].message)
-    }
-
-    return await Genre.findByIdAndUpdate(
-      id,
-      { name: req.body.name },
-      { new: true }
-    )
+router.put('/:id', [auth,admin,validateId], async (req, res) => {
+  const { id } = req.params
+  //First validate
+  const { error } = validate(req.body)
+  if (error) {
+    return new Error(error.details[0].message)
   }
-
-  updateGenre()
-    .then((genre) => res.send(genre))
-    .catch((err) => res.status(400).send(err.message))
+  const genre = await Genre.findByIdAndUpdate(
+    id,
+    { name: req.body.name },
+    { new: true }
+  )
+  res.send(genre)
 })
 
 module.exports = router

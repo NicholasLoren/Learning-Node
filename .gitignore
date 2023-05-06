@@ -1,6 +1,7 @@
 npm-demo/node_modules
 express-demo/node_modules
 vidly/node_modules
+vidly/coverage
 mongo-demo/node_modules
 mongo-exercise/node_modules
 unit-testing/node_modules
