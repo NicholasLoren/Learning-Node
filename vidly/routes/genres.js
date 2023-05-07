@@ -4,6 +4,7 @@ const { Genre, validate } = require('../models/genres')
 const auth = require('../middleware/auth')
 const admin = require('../middleware/admin')
 const validateId = require('../middleware/validateId')
+const validator = require('../middleware/validator')
 //Routes for genre
 
 //create a function to handle the exception for every route
@@ -26,13 +27,8 @@ router.get('/:id', validateId, async (req, res) => {
 
 //Create a genre
 
-router.post('/', auth, async (req, res) => {
-  //First validate
-  const { error } = validate(req.body)
-
-  if (error) {
-    return res.status(400).send(error.details[0].message)
-  }
+router.post('/', [auth,validator(validate)], async (req, res) => {
+  
 
   //If everything is okay, add new record
   const genre = new Genre({ name: req.body.name })
@@ -50,13 +46,10 @@ router.delete('/:id', [auth, admin, validateId], async (req, res) => {
 
 //update genre
 
-router.put('/:id', [auth,admin,validateId], async (req, res) => {
+router.put('/:id', [auth,admin,validateId,validator(validate)], async (req, res) => {
   const { id } = req.params
   //First validate
-  const { error } = validate(req.body)
-  if (error) {
-    return new Error(error.details[0].message)
-  }
+  
   const genre = await Genre.findByIdAndUpdate(
     id,
     { name: req.body.name },

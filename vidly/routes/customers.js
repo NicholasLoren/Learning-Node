@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const {validate,Customers} = require("../models/customers")
 const auth = require("../middleware/auth")
+const validator = require('../middleware/validator')
 
 //get all customers
 router.get('/', async (req, res) => {
@@ -24,15 +25,10 @@ router.get('/:id', async (req, res) => {
 })
 
 //add a customer
-router.post('/',auth, async (req, res) => {
+router.post('/',[auth,validator(validate)], async (req, res) => {
   const { name, isGold, phone } = req.body
 
-  //validate
-  const { error } = validate({ name, isGold, phone })
-
-  if (error) {
-    return res.status(404).send(error.details[0].message)
-  }
+   
 
   //add the following customers to database
   const customer = new Customers({

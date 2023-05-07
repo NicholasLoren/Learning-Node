@@ -4,11 +4,10 @@ const { Users } = require('../models/users')
 const bcrypt = require('bcrypt')
 const router = express.Router() 
 const auth = require("../middleware/auth")
+const validator = require('../middleware/validator')
 
-router.post('/', async (req, res) => {
-  const { error } = validate(req.body)
-  if (error) return res.status(400).send(error.details[0].message)
-
+router.post('/',validator(validate), async (req, res) => {
+  
   //check if user exists
   const user = await Users.findOne({ email: req.body.email })
   if (!user) return res.status(400).send('Invalid email or password')
@@ -21,7 +20,7 @@ router.post('/', async (req, res) => {
   return res.send(user.generateToken())
 })
 
-const validate = (user) => {
+function validate  (user)  {
   const schema = Joi.object({
     email: Joi.string().required().max(255).email(),
     password: Joi.string().required().min(6).max(255),

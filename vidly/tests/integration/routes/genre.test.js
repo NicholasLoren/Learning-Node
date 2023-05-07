@@ -9,7 +9,7 @@ describe('/api/genres', () => {
     server = require('../../../index')
   })
   afterEach(async () => {
-    server.close()
+    await server.close()
     await Genre.remove({})
   })
   describe('GET /', () => {
@@ -19,7 +19,7 @@ describe('/api/genres', () => {
         { name: 'genre2' },
       ])
 
-      const res = await request(server).get('/api/genres')
+      const res = await request(server).get('/api/genres/')
 
       expect(res.status).toBe(200)
       expect(res.body.length).toBe(2)
@@ -31,7 +31,7 @@ describe('/api/genres', () => {
   describe('GET /:id', () => {
     it('should return a 404 if given id is invalid', async () => {
       const genreId = '1'
-      const res = await request(server).get('/api/genre/' + genreId)
+      const res = await request(server).get('/api/genres/' + genreId)
 
       expect(res.status).toBe(404)
     })
@@ -132,8 +132,8 @@ describe('/api/genres', () => {
     let token
     let name
     let id
-    let user = { _id: mongoose.Types.ObjectId(), isAdmin: true }
-
+    const user = { _id: mongoose.Types.ObjectId(), isAdmin: true }
+    let genre
     const exec = () => {
       return request(server)
         .put('/api/genres/' + id)
@@ -145,7 +145,7 @@ describe('/api/genres', () => {
       token = new Users(user).generateToken()
       name = 'genre1'
 
-      const genre = new Genre({ name })
+      genre = new Genre({ name })
       await genre.save()
 
       id = genre._id
@@ -156,21 +156,50 @@ describe('/api/genres', () => {
     })
     it('should return 401 if no auth token is provided', async () => {
       token = ''
+
       const res = await exec()
+
       expect(res.status).toBe(401)
     })
 
     it('should return 403 if user is not admin', async () => {
-      user = {}
-      token = new Users(user).generateToken()
+      token = new Users({}).generateToken()
+
       const res = await exec()
+
       expect(res.status).toBe(403)
     })
 
-    it('should return 400 if id is not a valid', async () => {
+    it('should return 404 if id is not a valid', async () => {
       id = '1'
+
       const res = await exec()
+
+      expect(res.status).toBe(404)
+    })
+
+    it('should return 400 if name is lessthan 5 characters ', async () => {
+      name = '1234'
+
+      const res = await exec()
+
       expect(res.status).toBe(400)
+    })
+
+    it('should return 400 if name is greater than 50 characters ', async () => {
+      name = new Array(52).join('a')
+
+      const res = await exec()
+
+      expect(res.status).toBe(400)
+    })
+
+    it('should return 200 if genre name is valid', async () => {
+      name = 'genre_updated'
+      const res = await exec()
+
+      expect(res.status).toBe(200)
+      expect(res.body).toHaveProperty('name',name)
     })
   })
 })
