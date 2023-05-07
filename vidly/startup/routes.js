@@ -6,7 +6,7 @@ const users = require('../routes/users')
 const auth = require('../routes/auth')
 const returns = require('../routes/returns')
 const express = require("express")
-const production = require('prod')
+const production = require('./prod')
 const error = require("../middleware/error")
 
 module.exports = function (app) {

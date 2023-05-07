@@ -4,7 +4,11 @@
   "description": "This is a video rental app",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "start": "node index.js"
+  },
+  "engines":{
+    "node":"14.17.6"
   },
   "keywords": [
     "Vidly",
