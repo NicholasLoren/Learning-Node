@@ -18,6 +18,6 @@ module.exports = function (app) {
   app.use('/api/users/', users)
   app.use('/api/returns/', returns)
   app.use('/api/auth/', auth)
-  app.use(production)
+  app.use(production(app))
   app.use(error)
 }

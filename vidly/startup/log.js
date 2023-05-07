@@ -7,17 +7,17 @@ module.exports = function () {
     winston.format.colorize(),
     winston.format.simple()
   )}))
-  // winston.add(
-  //   new winston.transports.MongoDB({
-  //     db: 'mongodb://localhost/vidly',
-  //     level: 'info',
-  //   })
-  // )
+  winston.add(
+    new winston.transports.MongoDB({
+      db: 'mongodb://localhost/vidly',
+      level: 'info',
+    })
+  )
 
   //handle unexpected exceptions
   winston.exceptions.handle(
     new winston.transports.File({ filename: 'errorlog.log' }),
-    //new winston.transports.MongoDB({db:'mongodb://localhost/vidly})
+    new winston.transports.MongoDB({db:'mongodb://localhost/vidly'})
   )
 
   //handle rejected unhandled promises
